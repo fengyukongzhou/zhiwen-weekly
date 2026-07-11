@@ -32,7 +32,7 @@ The most beautiful part of a bicycle is its shadow.
 
 I clearly remember the exact moment I fell in love with photography. I was in the darkroom of the Hollywood Boys Club with my brothers. I was staring into a developing tray where I had just placed a blank sheet of photographic paper. I rocked the tray back and forth, creating continuous waves across the white paper. The room was silent, save for the rhythmic splashing of chemicals in the white plastic tray. Slowly, an image began to emerge from the void. At first, it was nothing more than grey dots, but within minutes, I could recognize the scene I had shot just hours prior. I had never witnessed anything so miraculous.
 
-<p align="right">—— <i>Visual Impact</i>, Donis A. Dondis</p>
+<p align="right">— Ibarionex Perello, <i>Making Photographs</i></p>
 
 ### 🤯 Shallow Work
 

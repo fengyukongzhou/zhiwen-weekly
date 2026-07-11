@@ -46,7 +46,7 @@ About twenty years ago, I hadn't written in Chinese for a long time, having been
 
 In Dean Murphy's interview, she says: "I cannot imagine a poet not striving for leisure and tranquility. Unfortunately, poetry is not born in noise and crowds, nor is it born on a bus. So, there must be four walls and a guarantee that the phone won't ring. That is everything writing requires."
 
-<p align="right">—— Wisława Szymborska, <i>I Prefer the Absurdity of Writing Poems</i></p>
+<p align="right">— Wisława Szymborska, <i>Poems: New and Collected</i></p>
 
 The girl sitting in front of me on the bus tied her hair with a simple black string. She wore slightly oversized workwear dresses, without any jewelry or makeup, not even pierced ears. The profile of her face was a fleeting inspiration of nature, impossible to replicate; faint blue veins showed beneath her nearly translucent skin. When she looked out the window, it was as if she were seeing the world for the first time, making one wonder where she had just arrived from. This image was both maximally simplified and immensely rich. I knew nothing about her, yet I felt as if I were sitting in a cathedral.
 

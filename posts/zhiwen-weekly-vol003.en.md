@@ -30,7 +30,7 @@ I'm left with a vague premonition: the *quantity* of output will become more cri
 
 Why do the most brilliant scientists, inventors, and artists possess so many great ideas? **Because they possess a massive volume of ideas** and make countless attempts. Psychologist Dean Simonton’s universal conclusion regarding various creative figures is this: these individuals essentially **use quantity to ensure quality**.
 
-<p align="right">— Wan Weigang, <i>Fearing the System (佛畏系统)</i></p>
+<p align="right">— Wan Weigang, <i>Buddha Fears the System</i></p>
 
 Sociologist Robert K. Merton posits that **the power of a genius may lie in a single individual's ability to accomplish work that might otherwise require dozens of people**; or, perhaps (especially in this explosive, volatile, and information-rich era), **it lies in an individual's ability to view their science comprehensively, weaving a massive, unified tapestry of knowledge much like Newton did**.
 
@@ -54,7 +54,7 @@ In truth, countless scholars have articulated the limitations of searching. For 
 
 In reality, **the most "interesting things" we possess are the specific, arbitrary details of our unique history.** One might imagine that somewhere in the universe exists an entity so complex that, by merely glancing at the inception of our history, it could instantly deduce all subsequent developments. However, a consequence of the **Principle of Computational Equivalence** is what I term "**computational irreducibility**." This implies that **there is no universal shortcut to understanding history; to know how history unfolds, one must actually live through it**—a realization that undoubtedly makes the meaning of life feel a bit more palatable.
 
-<p align="right">— Stephen Wolfram, <i>A New Kind of Science / Everything is Computation</i></p>
+<p align="right">— Stephen Wolfram, <i>Adventures of a Computational Explorer</i></p>
 
 ## 📚 The Chronicle of Bizarre Metaphors
 
@@ -149,7 +149,7 @@ The inner side of the wind is the side that remains dry when the wind blows thro
 "What does 'North' mean?" Arkatch asked.  
 "If you set off down a road and the sun first warms one of your ears, and later warms your other ear, then the direction you are heading is called North."
 
-<p align="right">— <i>The Hat of Fish Scales</i></p>
+<p align="right">— <i>The Fish Skin Hat</i></p>
 
 **— On Reading**
 

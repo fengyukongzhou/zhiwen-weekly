@@ -22,7 +22,7 @@ mathjax: true
 
 As a time for family reunions, the Spring Festival possesses both transcendence and public significance. It is not merely a gathering of family members; it points to the continuation of the entire lineage. As a form of gathering, the Spring Festival is intimately connected to sacrificial rites. People worship their ancestors, and the whole family comes together to share food, stories, hardships, and joys—all unfolding under the watchful eyes of ancestral spirits. Thus, true sharing occurs here, pointing toward a sacred connection.
 
-<p align="right">— Wang Xiaowei, <i>The Depths of Everyday Life</i></p>
+<p align="right">— Wang Xiaowei, <i>The Depths of the Everyday</i></p>
 
 The magnificent festival woven by you and me spreads across the heavens. Your songs and mine make the celestial sphere tremble, and all eras vanish in our playful gambols.
 
@@ -30,7 +30,7 @@ The magnificent festival woven by you and me spreads across the heavens. Your so
 
 A letter is a long wait between two festivals; a letter is a breathless pause amidst a melodious whistle; a letter is a symbolic vertigo of reason.
 
-<p align="right">— Sun Ganlu, <i>The Courier's Letter</i></p>
+<p align="right">— Sun Ganlu, <i>The Messenger's Letter</i></p>
 
 Today’s festivals are nothing more than events—lively, bustling activities. The word "event" comes from the Latin *eventus*, meaning "to appear suddenly, to happen." Its temporal attribute is contingency. Contingency is entirely different from the necessity of sacred time. The former is a true reflection of contemporary society, where all constraints and connections have vanished.
 

@@ -25,7 +25,7 @@ mathjax: true
 
 This (*4'33"*) is a "sound" piece about pacing, tempo, and the fermata. During these 4 minutes and 33 seconds, the musicians sit quietly beside their unused instruments, and **what you actually hear isn't silence, but the soundtrack of everyday life**. You can hear people shifting in their seats, and the occasional cough. The sound of rain hitting the roof, or the noisy hum of a passing car. Wooden floors creaking, doors closing, lights buzzing. Your hearing becomes hyper-sensitive; even touching your own face creates noise—noise loud enough to bother the person sitting next to you.
 
-<p align="right">— Will Gompertz, <i>What Are You Looking At? 150 Years of Modern Art in the Blink of an Eye</i></p>
+<p align="right">— Will Gompertz, <i>See What You're Missing: New Ways of Looking at the World Through Art</i></p>
 
 Headphones create an illusion, tricking your senses into believing they are hearing every single detail of the music. **Many artists adamantly refuse to use headphones in the recording studio because it's merely a degraded imitation of real-world auditory experiences.** The sound emanating from speakers is far closer to the sound of an instrument being played in a room—immersing the listener in full-spectrum, three-dimensional vibrations.
 

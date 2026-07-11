@@ -42,7 +42,7 @@ The choice of communication method is fundamentally an issue of allocating commu
 
 So, I invented a term: the "supply-side logic user." People on the demand side treat logic as a weapon for attack and defense, treating debate as a word game. Supply-side logic users should actively change this dynamic of talking past each other; we should leverage our expertise in logical analysis to provide logical services to others.
 
-<p align="right">—— <i>Fear the System</i>, Wan Weigang</p>
+<p align="right">— Wan Weigang, <i>Buddha Fears the System</i></p>
 
 Artificial intelligence has the potential to act as a "middleman" in interpersonal relationships, helping to repair rather than replace genuine emotional connections. Take traditional families who struggle to express love as an example: AI can serve as a mediator, easing the estrangement caused by parents' habitual criticism and children's subjective emotional suppression. This "AI Middleman" model can be extended to broader social scenarios. Its purpose is not to make AI a spiritual crutch, but to help mend interpersonal relationships that are increasingly distant in our fast-paced modern society. This approach avoids the sense of conversational emptiness stemming from AI's lack of real-life experience, while also mitigating social apathy to some extent. Although such products are technologically feasible, they are rarely seen in the market. This perhaps reflects product developers' current obsession with building sci-fi AI emotional companions, neglecting AI's practical value as a social repair tool.
 

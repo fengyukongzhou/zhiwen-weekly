@@ -36,7 +36,7 @@ Compared to simply referencing the style to create a slide with different conten
 
 Arguments over what kind of lifestyle one ought to lead are often just people of differing temperaments talking past each other.
 
-<p align="right">— Morgan Housel, <i>The Psychology of Money</i></p>
+<p align="right">— Morgan Housel, <i>The Art of Spending Money</i></p>
 
 History experiences structural progress; every era is fundamentally new. Once people learn from historical lessons, they alter the course of history, rendering those earlier lessons obsolete. The chain of historical events is fraught with contingency. The kind of "historicism" that believes history possesses an inevitable trajectory or deterministic laws is a flawed worldview. History, in truth, is merely a collection of accidents.
 The greatest utility of various historical narratives is to stretch your imagination. If you can merely conceive of the "possibilities" of various actions when the time comes, that's already an achievement. Only then should you begin to weigh the "probabilities."
@@ -81,7 +81,7 @@ I feel that writing holds profound significance for me; I have yet to find anoth
 
 It sounds heavy to ponder, but there is no more potent piece of information in the world than knowing precisely how much time you have left.
 
-<p align="right">— Morgan Housel, <i>The Psychology of Money</i></p>
+<p align="right">— Morgan Housel, <i>The Art of Spending Money</i></p>
 
 I suspect memory serves as the ultimate redemption: standing one step away from death, at that final foothold, every remembered thing reveals a fresh meaning. Consequently, a person is no longer burdened by sorrow, nor crippled by confusion. As for what cannot be remembered, time has proven it immaterial, and thus naturally unnecessary to retain. Therefore, one feels abundant and free of regret. I imagine the mindset of someone accompanying death ultimately looks like this: you have comprehended everything you needed to record. To them, the world at that moment must feel both exquisitely compact and boundlessly vast.
 

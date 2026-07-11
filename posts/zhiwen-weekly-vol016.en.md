@@ -35,7 +35,7 @@ Setting a goal means following an unknown path toward a distant destination, whi
 <p align="right">— Kenneth Stanley & Joel Lehman, <i>Why Greatness Cannot Be Planned</i></p>
 
 The demands of poetry stipulate that, driven by the desire for innovative breakthroughs, there will be a constant dialectical cycle between the difficult and the easy, the elite and the popular, the contracted and the expanded. It will not, and cannot, permanently move along that narrow path you hate and fear; if it travels the narrow path for too long, it will inevitably turn back to open the grand gates and walk the broad road. It's just that with each dialectical shift, it never returns to the starting point of the previous cycle—it continuously pioneers different ways of tightening and relaxing.
-<p align="right">— Yang Zhao, <i>The Poetic</i></p>
+<p align="right">— Yang Zhao, <i>Poetic</i></p>
 
 Only their sphere of activity grew smaller and smaller, leaving just a patch of green the size of a palm. They invented a form of exercise: after dinner, lined up shoulder to shoulder, they would walk counterclockwise in circles around this small grove, taking about a minute per lap, like spinning a prayer wheel, trampling out a path. Whatever contortions life and their superiors demanded of them, they would contort themselves accordingly.
 <p align="right">— Jia Hangjia, <i>Scribbles</i></p>

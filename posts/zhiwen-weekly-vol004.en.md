@@ -39,7 +39,7 @@ Our human ancestors enacted a fictional drama: they personified the forces gover
 
 **There is no sharp dividing line between "intelligence" and "computation."** Things like cellular automata and weather systems are performing operations every bit as complex as our brains. But even if they are, in some sense, "thinking," they do not do so in a human manner, and they do not possess our context or our specific details.
 
-<p align="right">— Stephen Wolfram, <i>A New Kind of Science / Everything is Computation</i></p>
+<p align="right">— Stephen Wolfram, <i>Adventures of a Computational Explorer</i></p>
 
 When a young person uses an object, they might treat it purely as a tool. **However, as they age, as their past life grows sufficiently rich and is fermented by the passage of time, familiar objects transform into ritual vessels, carrying massive loads of life signals.** In short, we do not simply use an object to fulfill a function; we "commune" with objects.
 
@@ -53,7 +53,7 @@ When a young person uses an object, they might treat it purely as a tool. **Howe
 
 My realization at the time was this: **a poem may perhaps be inexplicable, yet a good poem must offer an abundance of suggestions, making you feel that within the bewildering inexplicability before your eyes, there lies a hidden path toward understanding.** A good poem seduces you into striving to find the explicable within the inexplicable. You enter the poem, and thus, the poem enters you.
 
-<p align="right">— Yang Zhao, <i>Poetic (诗的)</i></p>
+<p align="right">— Yang Zhao, <i>Poetic</i></p>
 
 To see this clearly, you need only translate verses like Liu Yuxi’s "Beside the Vermilion Bird Bridge, wild grasses and flowers grow / At the entrance of Black Robe Lane, the setting sun slants low," and Li Bai’s "White hair three thousand stanzas long / Grown so long due to sorrow," into modern vernacular. For instance: "Wild grass and flowers have overgrown beside the Vermilion Bird Bridge, and the setting sun hangs slanted at Black Robe Lane" versus "My white hair is three thousand *zhang* long, it grew this long because of my worry."
 
@@ -65,7 +65,7 @@ It is not hard to see that once you strip away the formal poetic essence—meani
 
 ...In the moral philosophy of poetry, a poem possesses true meaning and value only when it manifests a light, flavor, and texture distinct from its author. **If "the poem is exactly like the person," then having the "person" is enough—why bother with the "poem"?** Yet T.S. Eliot understood better than anyone that, within secular morality, if a schism is discovered between "the poem and the person," society will merely accuse the poet of hypocrisy. Therefore, he simply went to every length to make the "person" vanish completely, leaving behind only the poem, leaving behind only the transcendent beauty, radiance, decadence, and anguish constructed and conveyed by the verses.
 
-<p align="right">— Yang Zhao, <i>Poetic (诗的)</i></p>
+<p align="right">— Yang Zhao, <i>Poetic</i></p>
 
 If I read a book and it makes my whole body so cold no fire can warm me, I know that is poetry. If I feel physically as if the top of my head were taken off, I know that is poetry. These are the only way I know it. Is there any other way?
 

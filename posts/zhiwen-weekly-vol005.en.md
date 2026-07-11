@@ -66,7 +66,7 @@ Our lives are so long; why are our resumes so brief? Why must the rich landscape
 
 More importantly, **when all these elements are stripped away, what kind of relationship does the person on the resume have with the true "I"? Is that still "me"? And if it isn't "me," why is it permitted to represent "me," and stand in for "me" to be judged and measured by society?**
 
-<p align="right">— Yang Zhao, <i>Poetic (诗的)</i></p>
+<p align="right">— Yang Zhao, <i>Poetic</i></p>
 
 ## 📰 The Newsstand
 

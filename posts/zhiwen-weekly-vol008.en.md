@@ -28,7 +28,7 @@ I believe that **when people who have read your work offer opinions on a specifi
 <p align="right">—— <i>Novelist as a Vocation</i>, Haruki Murakami</p>
 
 **Just as I couldn't hear that transcendent voice, I could only keep reading—reading poems written by others, cutting and refining my own sentences from within them.** I, too, once tried to pretend I was fortunate enough to hear that transcendent voice, pretending to spontaneously compose a brilliant poem that I had actually spent the previous night agonizing over and memorizing. But I quickly saw through the sheer boredom and absurdity of it. After all, besides myself, who was I really pretending for?
-<p align="right">—— <i>Poetics</i>, Yang Zhao</p>
+<p align="right">— Yang Zhao, <i>Poetic</i></p>
 
 When thinking about AI and reading, I'm often reminded of an old, blunt saying: "**There are some things that, no matter how bad you are at them, you just can't ask your neighbor to do for you.**"
 <p align="right">—— Jia Hangjia</p>
@@ -41,7 +41,7 @@ When thinking about AI and reading, I'm often reminded of an old, blunt saying: 
 <p align="right">—— <i>Last Love in Constantinople</i>, Milorad Pavić</p>
 
 I sat for another ten minutes or so, finished the wine in my glass, washed it clean, placed it back in the compartment under the counter, and then went outside to pull down the rolling shutter door. My foot slipped, and I fell hard, landing flat on my back. I lay there on the ground for a while; if someone had handed me a quilt right then, I would have gladly fallen asleep. The sound of cars passing in the distance, the smell of worn stones on the ground—**that smell was actually quite pleasant, a sweet scent accumulated from the lashing of too many shoe soles**.
-<p align="right">—— <i>The Uninterrupted Man</i>, Shuang Xuetao</p>
+<p align="right">— Shuang Xuetao, <i>Uninterrupted People</i></p>
 
 In the novel (*Everyman* by Philip Roth), the protagonist recalls his youth, swimming vigorously in the ocean, filled with an indescribable, narcissistic joy in his young, powerful body: "**Except for the giddy, mindless joy of being battered by the waves all day, the sheer taste of it, the taste of it made him so ecstatic he could have taken a bite out of himself to savor the flavor of being a creature of flesh and blood.**" This description is utterly brilliant. Literary expressions of youthful narcissism can be channeled through sexual desire, but they can equally be expressed through oral desires; both tap directly into the most potent pulse of life. Even if it's the taste of flesh and blood in both cases, the longing for life chewed out of them is entirely different.
 <p align="right">—— <i>Don Quixote's Glasses</i>, Zhang Qiuzi</p>

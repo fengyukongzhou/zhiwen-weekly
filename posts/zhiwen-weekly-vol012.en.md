@@ -27,7 +27,7 @@ Unless one is a madman bearing the title of genius, it is absolutely impossible 
 
 He recited the novel in a beautifully sonorous voice, but in reality, his tone wasn't suited for Kafka. **In my view, Kafka's novels ought to be read in the most monotonous voice possible—ideally by Siri on a smartphone**—with an invariably even rhythm, as if reading an instruction manual to someone illiterate.
 
-<p align="right">— Shuang Xuetao, <i>The Unbroken Man</i></p>
+<p align="right">— Shuang Xuetao, <i>Uninterrupted People</i></p>
 
 Once the tea was finished, the interrogation began immediately. An endless cycle of tedious questions. Such as exactly which chapters of *The Trial* were read, and at what precise moment the pajamas were changed. I gave the fisherman a summary of Kafka's novels, but it didn't seem to pique his interest. To him, I imagine, such plots were everyday occurrences. I couldn't help but worry whether Franz Kafka's novels would even survive into the twenty-first century. **Regardless, he actually jotted down the main plot of <i>The Trial</i>. Why bother recording all these things one by one? I was genuinely baffled. It was profoundly Franz Kafka-esque.**
 
