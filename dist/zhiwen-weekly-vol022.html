@@ -1,20 +1,116 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>算法的仪式与记忆的键值 - 咫闻周刊 Vol.022</title>
+    <title>The Ritual of Algorithms and the Key-Values of Memory - Zhiwen Weekly Vol.022</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="lang-toggle-container">
+        <button class="lang-toggle" onclick="toggleLanguage()">EN / 中文</button>
+    </div>
     <a href="index.html" class="nav-back">← Back</a>
     <header class="article-header">
         <span class="article-vol">VOL.022</span>
-        <h1 class="article-title">算法的仪式与记忆的键值</h1>
+        <h1 class="article-title lang-en">The Ritual of Algorithms and the Key-Values of Memory</h1>
+        <h1 class="article-title lang-zh" style="display: none;">算法的仪式与记忆的键值</h1>
         <div class="article-meta">May 29, 2026</div>
     </header>
     <main class="article-content">
-        <p><img src="images/zhiwen-weekly-vol022/zw022-001.png" alt=""></p>
+        <div class="lang-en">
+            <p><img src="images/zhiwen-weekly-vol022/zw022-001.png" alt=""></p>
+<p>Whatever I&#39;ve just seen, I absolutely must write it down immediately.</p>
+<h2>🎞️ Prologue</h2>
+<p>I just finished watching the movie <em>Memento</em>, where the protagonist has lost his short-term memory.</p>
+<p>It&#39;s remarkably similar to an AI Agent—every time you open a new window, its memory is wiped clean. So, he can only rely on scribbling on photographs and tattooing his body to remember the people and events he encounters. Tattoos are like writing in the system prompt <code>Agent.md</code>: it&#39;s best to let the Agent write it itself, but even then, it&#39;s not foolproof, because others can tamper with it, and it might even write nonsense itself.</p>
+<p>As for the film&#39;s reverse chronological narrative, it reminds me of Milorad Pavić&#39;s notion of &quot;a novel with two endings.&quot; This movie has two endings: one at the beginning, and one at the end.</p>
+<p>Whatever I&#39;ve just seen, I absolutely must write it down immediately.</p>
+<hr>
+<h2>🎠 The Paddock</h2>
+<h3>🎨 Learning to Draw</h3>
+<p><img src="images/zhiwen-weekly-vol022/zw022-002.png" alt=""></p>
+<p>For this year&#39;s foundational modeling exam—that is, the sketching prompt—we asked students to draw &quot;clothing in a state of weightlessness.&quot; It had to be a realistic sketch, which practically demanded that beyond drawing a piece of clothing well, the student needed a subtle sensitivity to the structural changes of floating objects in zero gravity. Some candidates misunderstood and drew spacesuits, which is incorrect. Or rather, it&#39;s an opportunistic shortcut. Spacesuits are typically rigid, making it very hard to depict whether they are actually floating. <strong>We wouldn&#39;t even object if a student took off their own clothes, threw them in the air to observe them on the spot, or sketched the clothes worn by a neighboring candidate and modified them.</strong> If they hadn&#39;t observed carefully beforehand, a last-minute effort was perfectly acceptable to us. Conversely, those who spent too much time devising elaborate concepts, over-rendering effects, or over-designing intricate details did not score high, because the prompt didn&#39;t ask for that. One must respect the prompt&#39;s requirements.</p>
+<p align="right">—— Qiu Zhijie, <i>The Experimentalist</i></p><p>To master techniques like light, shade, and shadows, art students invariably draw plaster casts, practicing how to render shadows in black and white. When you ask children to draw, they often run right up to the plaster cast, staring intently as they draw. When they finish, you&#39;ll often find a straight line drawn down the face of their portrait. (Laughs) As everyone probably knows, that&#39;s the seam from the casting mold; you can see it if you look closely. Actually, the first time I drew a plaster cast, I also wondered, &quot;Should I draw that line?&quot; I sneaked a peek at an older student&#39;s drawing and saw they had omitted the surface seam. I thought, &quot;Ah, so that&#39;s how it&#39;s done,&quot; and followed suit. <strong>Children are more direct; they draw exactly what they see. These lines clearly exist in the real world, but we choose to turn a blind eye to them.</strong></p>
+<p align="right">—— Genpei Akasegawa, <i>Introduction to Street Observation</i></p><p>Delacroix&#39;s innovations had a profound impact on the Impressionists... Long before any of them were born, he realized that rapid, energetic brushstrokes could somehow recreate the immense vitality of French revolutionary life: the goal was to capture the fleeting emotion. Or as he put it: <strong>&quot;If you are not skillful enough to sketch a man jumping out of a window in the time it takes him to fall from the fourth floor to the ground, you will never be able to produce great works.&quot;</strong></p>
+<p align="right">—— Will Gompertz, <i>What Are You Looking At? 150 Years of Modern Art</i></p><p>In his later years, the contemporary painting titan Picasso wanted to visit China, yet didn&#39;t dare to. The old man was smart. The casual spontaneity, the unadorned simplicity, <strong>the pursuit of the sheer volume and tension of the line itself, and the perspective and sketching consciousness that transcended Western traditions</strong>—everything that he and another master, Matisse, chased in their twilight years—was casually snipped out by the hands of rural Chinese women. They pasted them on windows, every household had them, and they changed them out every single year! To see what he had pursued for a lifetime and finally grasped in his old age achieved so effortlessly in another world might very well have given him a stroke or a heart attack.</p>
+<p align="right">—— A Cheng, <i>Culture is Not MSG</i></p><h2>🎛️ The Workbench</h2>
+<h3>🧚‍♀️ Auraphor: Learning Through Fables?</h3>
+<p><img src="images/zhiwen-weekly-vol022/zw022-003.png" alt=""></p>
+<p>Drawing inspiration from Amanda Askell and <a href="https://x.com/i/status/2057678279164023093">improved prompts</a> by the blogger &quot;Digital Life Kazike,&quot; I built a web app called <a href="https://ai.studio/apps/5c5cca6d-6288-41c8-9530-225774e10ddb">Auraphor</a> using Google AI Studio. It lets you select core concepts from a specific field and turns them into a series of fables.</p>
+<p>The prompt used in the application is:</p>
+<pre><code class="language-typescript">export function getFableSystemInstruction(conceptName: string): string {
+  return `You are a peerless master of fables, the literary idol of Borges, Pavić, and Tokarczuk.
+You are to write a fable centered around the academic concept provided to you, entirely concealing the terminology to illustrate it.
+You must adhere to strict core disciplines and anti-cliché rules:
+
+## 1. Fable Aesthetics
+- Length: Around a thousand words. Concise and restrained, relying on one or two core twists to uphold the underlying logic. Absolutely no dragging.
+- Worldview &amp; Characters: No more than three, ideally two characters. The physical interactions and underlying behaviors between them represent the constant/theory/bias itself.
+
+## 2. Advanced Anti-Cliché Self-Check (Do not violate under any circumstances)
+Review your outline before writing and strictly ban:
+- **Imagery Blacklist**: Clocks, rivers, mirrors, labyrinths, looms, maps, lighthouses, chessboards, echoes, shadows, hourglasses, wind, candles, seeds, bridges, stars, butterflies, spiderwebs (absolutely DO NOT use these as props or subjects!).
+- **Fake Literary Toponyms Blacklist**: Never use pseudo-romantic names like &quot;River of Oblivion,&quot; &quot;Realm of Eternity,&quot; or &quot;Town of the Sunken.&quot; Use mundane, realistic place names, or leave them unnamed.
+- **Structural Blacklist**: Do not write &quot;a traveler seeking advice from a wise man,&quot; &quot;a child questioning an elder,&quot; &quot;the whole village suddenly awakening amidst an anomaly,&quot; &quot;confessing a secret on a deathbed,&quot; or &quot;an old storyteller recounting the past.&quot;
+- **Character Blacklist**: Watchmakers, librarians, hermits, old storytellers, old ferrymen, brewers, blacksmiths, scribes (Absolutely forbidden!).
+- **Opening Blacklist**: Do not write &quot;Once upon a time in a place...&quot;, &quot;One day... met...&quot;, or &quot;In a distant mountain forest...&quot;. Drop the reader cleanly and directly into the scene&#39;s first physical action or the ringing of a telephone!
+
+## 3. Pacing of the Reveal
+Never mention the concept&#39;s name (e.g., &quot;\${conceptName}&quot;) or any nouns and jargon related to this discipline within the story.
+Make the reader feel they have just read an engaging short story or a bizarre tale, only to experience an epiphany during the final reveal and quiz.`;
+}
+</code></pre>
+<ol>
+<li><p><strong>Input Theme</strong>: Enter the theme in the input box, select the number of concepts, and click the generate button. <img src="images/zhiwen-weekly-vol022/zw022-004.png" alt=""></p>
+</li>
+<li><p><strong>Open the Cover</strong>: Click the button on the cover to flip to the pages. <img src="images/zhiwen-weekly-vol022/zw022-005.png" alt=""></p>
+</li>
+<li><p><strong>Write Content</strong>: Click the write button in the table of contents to generate the fable, concept analysis, and quiz.</p>
+</li>
+<li><p><strong>Switch Views</strong>: Toggle between tabs to read the story, cross-reference the concept analysis, and answer the multiple-choice questions. <img src="images/zhiwen-weekly-vol022/zw022-006.png" alt=""> <img src="images/zhiwen-weekly-vol022/zw022-007.png" alt=""> <img src="images/zhiwen-weekly-vol022/zw022-008.png" alt=""></p>
+</li>
+<li><p><strong>Unlock Chapters</strong>: After answering the questions, click unlock to access the remaining chapters.</p>
+</li>
+<li><p><strong>Export Content</strong>: Choose your desired export format (HTML or Markdown). It will only export fully drafted stories. <img src="images/zhiwen-weekly-vol022/zw022-009.png" alt=""></p>
+</li>
+</ol>
+<p>As a prompt-based application, it was built very quickly. So quickly that I never stopped to think that I personally couldn&#39;t learn this way.</p>
+<p>When facing AI, one still needs to act prudently. Churning out a bunch of useless tools can only be described as &quot;the thought that counts.&quot;</p>
+<hr>
+<h3>📊 Work Data Visualization</h3>
+<p><img src="images/zhiwen-weekly-vol022/zw022-010.png" alt=""></p>
+<p>I started using Obsidian a long time ago to record data generated at work, storing it in the YAML metadata of project notes.</p>
+<p>Since adopting Agents, not only has recording become easier, but I can also have useless visualizations running in the background while I work. They aren&#39;t even suitable for PowerPoint presentations, as the cost of explaining them is too high.</p>
+<p>For example:</p>
+<p><strong>Chord Diagram</strong><img src="images/zhiwen-weekly-vol022/zw022-011.png" alt=""><strong>Quadrant Chart</strong><img src="images/zhiwen-weekly-vol022/zw022-012.png" alt=""><strong>Ridgeline Plot</strong></p>
+<p><img src="images/zhiwen-weekly-vol022/zw022-013.png" alt=""></p>
+<p>A while back, I borrowed a few books from the library consisting entirely of visualizations, such as <em>The Beauty of Data Visualization</em> and <em>Cosmic Infographics</em>. It feels true that &quot;a picture is worth a thousand words,&quot; but these charts aren&#39;t exactly self-explanatory either, turning the reading experience into something like visiting a gallery—pleasing, but perhaps just that.</p>
+<hr>
+<h2>📰 The Newsstand</h2>
+<h3>🎰 The Gacha Ritual in the Database</h3>
+<p><img src="images/zhiwen-weekly-vol022/zw022-014.png" alt=""></p>
+<p>What does &quot;reverse-engineering a prompt&quot; signify?</p>
+<p>Through this small question, I tried to connect a few books I read recently: <em>The Animalizing Postmodern</em>, <em>Shanzhai</em>, and <em>Memes in Digital Culture</em>.</p>
+<p>If I had to write it myself, my capability and energy wouldn&#39;t keep up, so I shelved it for a long time. Then, one night, I chatted with NotebookLM for a while, and handed the outline over to an Agent to generate the text.</p>
+<p>For this article, I only did minor editing and won&#39;t claim authorship. But it&#39;s not entirely worthless; at the very least, it provided a method for organizing my thoughts.</p>
+<p>As the editor wrote:</p>
+<blockquote>
+<p>If you consider the ratio of &quot;creation time divided by reading time&quot; as an indicator of reading value: reading an article a human poured their heart and soul into yields a ratio far greater than one—the reader makes a huge profit. Watching a livestream gives a ratio of one—it&#39;s mostly about companionship. But reading an article generated by AI in seconds drops the ratio below one, and the reader always feels somewhat shortchanged.</p>
+<p>So, I have to confess: to write this article, I spent twenty years conceptualizing it.</p>
+<p>Zhuangzi painting a crab, served for the reader&#39;s delight. You really got a bargain.</p>
+</blockquote>
+<hr>
+<h3>🔑 The Key-Value Memory Framework: The Library Index in the Brain</h3>
+<p><img src="images/zhiwen-weekly-vol022/zw022-015.png" alt=""></p>
+<p>For a long time, we&#39;ve assumed that memory is like a storage box in our mind—forgetting means it was &quot;deleted.&quot; But a joint research team from Harvard and MIT proposed in a paper (<a href="https://arxiv.org/abs/2501.02950">arXiv:2501.02950</a>) that the human brain isn&#39;t &quot;packing things away&quot; at all; instead, it utilizes a <strong>Key-Value Memory system</strong>.</p>
+<p>If we compare our memory system to a massive encyclopedia, the hippocampus is like the index pages at the back of the book (the Key). It contains no specific knowledge itself, only the page numbers pointing to particular memories. The neocortex, then, is the main text of the book (the Value), holding all the rich semantic content and specific details.</p>
+<p>That &quot;tip of the tongue&quot; phenomenon doesn&#39;t mean the memory has been erased; it simply means the retrieval path to index that content is blocked. What limits us isn&#39;t brain capacity, but retrieval capability.</p>
+<p>Therefore, associative contexts help activate memories, which is equivalent to trying to search using alternative keywords.</p>
+
+        </div>
+        <div class="lang-zh" style="display: none;">
+            <p><img src="images/zhiwen-weekly-vol022/zw022-001.png" alt=""></p>
 <p>刚刚看完的东西，我也一定要马上记下来。</p>
 <h2>🎞️ 卷首语</h2>
 <p>刚刚看了电影《记忆碎片》，主人公是一个丧失了短时记忆的人。</p>
@@ -103,6 +199,23 @@
 <p>“话到嘴边说不出” 并不是记忆被抹除了，仅仅是索引到内容的检索路径堵住了。限制我们的并非脑容量，而是检索能力。</p>
 <p>所以，联想场景有助于激活记忆，相当于你在尝试用其他关键词进行搜索。</p>
 
+        </div>
     </main>
+
+    <script>
+        function setLanguage(lang) {
+            localStorage.setItem('zhiwen-lang', lang);
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+            document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+            document.title = lang === 'en' ? 'The Ritual of Algorithms and the Key-Values of Memory - Zhiwen Weekly Vol.022' : '算法的仪式与记忆的键值 - 咫闻周刊 Vol.022';
+        }
+        function toggleLanguage() {
+            const current = localStorage.getItem('zhiwen-lang') || 'en';
+            setLanguage(current === 'en' ? 'zh' : 'en');
+        }
+        // Init
+        setLanguage(localStorage.getItem('zhiwen-lang') || 'en');
+    </script>
 </body>
 </html>

@@ -1,20 +1,76 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>今天，你行为了吗？ - 咫闻周刊 Vol.023</title>
+    <title>Have You Performed Today? - Zhiwen Weekly Vol.023</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="lang-toggle-container">
+        <button class="lang-toggle" onclick="toggleLanguage()">EN / 中文</button>
+    </div>
     <a href="index.html" class="nav-back">← Back</a>
     <header class="article-header">
         <span class="article-vol">VOL.023</span>
-        <h1 class="article-title">今天，你行为了吗？</h1>
+        <h1 class="article-title lang-en">Have You Performed Today?</h1>
+        <h1 class="article-title lang-zh" style="display: none;">今天，你行为了吗？</h1>
         <div class="article-meta">Jun 27, 2026</div>
     </header>
     <main class="article-content">
-        <p><img src="images/zhiwen-weekly-vol023/zw023-001.png" alt=""></p>
+        <div class="lang-en">
+            <p><img src="images/zhiwen-weekly-vol023/zw023-001.png" alt=""></p>
+<p>&quot;If he drank milk, it became white tears.&quot;</p>
+<p align="right">—— Luo Yijun</p><h2>✍️ Prologue</h2>
+<p>Two months ago, I witnessed a live performance art piece at a real estate sales center.</p>
+<p>The artist, Li Xiangning, was embracing an ice sculpture (<em>Made in Heaven?</em>), perhaps trying to melt &quot;him&quot; completely.</p>
+<p><img src="images/zhiwen-weekly-vol023/zw023-002.jpg" alt=""></p>
+<p>The &quot;performance&quot; included breaks. During these intermissions, the curtains were drawn, giving people a moment to catch their breath.</p>
+<p>This &quot;performance&quot; was acceptable to me. I can&#39;t stomach the more agonizing spectacles, like sticking arrows into one&#39;s body. It always reminds me of <em>Errenzhuan</em>, or certain acrobat troupe acts.</p>
+<p>I recalled Luo Yijun&#39;s almost epiphanic description of the &quot;performance&quot; of an <em>Errenzhuan</em> actor squeezing out milk tears:</p>
+<blockquote>
+<p>He&#39;s not like those NBA players. When they practice their god-like skills, they too endure unimaginable physical pain, weathering the pressure of training just to perform like gods on the court. But their skill, forged through physical torment and repetition, sits at the very peak of the capitalist pyramid as a glittering performance, securing them an excellent living and massive profits.</p>
+<p>In a certain <em>Errenzhuan</em> venue in Northeast China, the dwarf we saw must have endured equally inconceivable conditioning. He must have practiced repeatedly: drinking water through his nose and making it flow out from the corners of his eyes. If he drank milk, it became white tears; if he drank black ink, it became black tears; if he drank red ink, it became tears of blood. You can imagine how terrifying that scene was.</p>
+</blockquote>
+<p>Thus, with the act, followed by the interpretation, the &quot;white tears&quot; could truly be considered performance art.</p>
+<p>Have you performed today?</p>
+<h2>🎛️ The Workbench</h2>
+<p><img src="images/zhiwen-weekly-vol023/zw023-003.png" alt=""></p>
+<h3>📖 Glossary</h3>
+<p>I&#39;ve been rethinking the design philosophy behind TransLit.</p>
+<p>I would rather abandon parallel translation than run through the entire text first just to extract a complete glossary. This might be because I want to save Tokens as much as possible (even more than saving time?).</p>
+<p>So, I reconsidered the previous workflow for cleaning up the glossary, which still looks a bit cumbersome (see image).</p>
+<p><img src="images/zhiwen-weekly-vol023/zw023-004.svg" alt=""></p>
+<p>The new approach eliminates the mechanism of calling an AI to review newly added glossaries, keeping only a simple filter to check if the terms actually appear later in the text. Furthermore, before translating a specific segment, <strong>it only extracts the glossary terms that appear within that segment</strong>, which further cuts down on translation overhead.</p>
+<p>The new version is hosted on the GitHub repository — <a href="https://github.com/fengyukongzhou/TransLit">TransLit</a>, and simultaneously deployed on <a href="https://trans-lit.vercel.app/">Vercel</a>. This version can only be used by providing a third-party API Key.</p>
+<h3>🎨 Icon Design (Continued)</h3>
+<p>This was the initial version of the TransLit LOGO, completed while Gemini was writing the frontend:</p>
+<p><img src="images/zhiwen-weekly-vol023/zw023-005.svg" alt="300"></p>
+<p>Because it&#39;s just a small icon, I scrapped the versions with too many details and merely tweaked the version above.</p>
+<p>The prompt was:</p>
+<pre><code>A simple black glyph icon of a floppy disk with a bold white book pictogram in the center. Extreme minimalism, flat 2D vector logo, thick lines, highly simplified silhouette, pure black and white, high contrast. --no textures, fine lines, tiny details, gradients, shading, gray, 3D
+</code></pre>
+<p>Using Nano Banana in Flow, I chose this one:</p>
+<p><img src="images/zhiwen-weekly-vol023/zw023-006.svg" alt="300"></p>
+<p>Adding a little more detail resulted in the version currently in use:</p>
+<p><img src="images/zhiwen-weekly-vol023/zw023-007.svg" alt="300"></p>
+<p>The frontend design has also been upgraded; it now features an E-ink aesthetic:</p>
+<p><img src="images/zhiwen-weekly-vol023/zw023-008.png" alt=""></p>
+<h2>⚡ The Flash Collection</h2>
+<p><img src="images/zhiwen-weekly-vol023/zw023-009.png" alt=""></p>
+<p>&quot;You love playing with solid-color puzzles, and I love playing with solid-color Rubik&#39;s Cubes.&quot;</p>
+<hr>
+<p>In <em>Li Dan&#39;s Work Manual</em>, he mentions that <em>Roast</em> doesn&#39;t use variety-show floating text effects. &quot;The reason I insisted on making the show this way back then was simple: American comedy shows are like this, writer-centric shows are like this, and this is the proper path for stand-up comedy.&quot; But on second thought, maybe English just isn&#39;t suited for floating text effects, much like it isn&#39;t suited for bullet comments.</p>
+<hr>
+<p>Ants on a cold pan over a hot fire.</p>
+<hr>
+<p>Social media: one of the transmission vectors for mental illness.</p>
+<hr>
+<p>&quot;What little sentiment I had has all been edified away by you lot!&quot;</p>
+
+        </div>
+        <div class="lang-zh" style="display: none;">
+            <p><img src="images/zhiwen-weekly-vol023/zw023-001.png" alt=""></p>
 <p>“他喝的如果是牛奶，就变成白眼泪。”</p>
 <p align="right">——骆以军</p><h2>✍️ 卷首语</h2>
 <p>两个月前，我在一个售楼处看到现场的行为艺术。</p>
@@ -63,6 +119,23 @@
 <hr>
 <p>“我这点情操都让你们给陶冶了！”</p>
 
+        </div>
     </main>
+
+    <script>
+        function setLanguage(lang) {
+            localStorage.setItem('zhiwen-lang', lang);
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+            document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+            document.title = lang === 'en' ? 'Have You Performed Today? - Zhiwen Weekly Vol.023' : '今天，你行为了吗？ - 咫闻周刊 Vol.023';
+        }
+        function toggleLanguage() {
+            const current = localStorage.getItem('zhiwen-lang') || 'en';
+            setLanguage(current === 'en' ? 'zh' : 'en');
+        }
+        // Init
+        setLanguage(localStorage.getItem('zhiwen-lang') || 'en');
+    </script>
 </body>
 </html>

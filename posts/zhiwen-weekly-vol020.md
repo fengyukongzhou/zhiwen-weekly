@@ -1,0 +1,350 @@
+---
+title: Vol.020 辞典排版吃垃圾
+date: 2026-04-24
+tags:
+  - AI
+categories: 咫闻周刊
+hidden: false
+mathjax: true
+---
+
+![](zw20-01.png)
+
+[Build-up]
+吃！吃！吃！吃！
+吃！吃！吃！吃！
+垃圾！垃圾！垃圾！垃圾！
+吃！吃！吃！吃！
+
+<!--more-->
+
+（封面由 GPT-Image-2 设计制作）
+
+## 🐎 跑马场
+
+![](zw20-02.png)
+
+### 📖 哈扎尔辞典
+
+1921 年，国际奥林匹克委员会首次以书面形式确定了各参赛国的入场规则。该章程提到：“参赛的各国代表团在入场时，必须在队首展示带有国家名称的标牌以及国旗。”同时还有一条附注：“（参赛各国按照字母顺序入场）”。直到 1949 年，为了进一步彰显奥运会的世界性理念，人们对相关章程稍做调整，并一直沿用至今。修订后的章程规定，**主办国有权按照主办国语言的字母顺序组织开幕式的入场式**。这次修订表明，国际奥委会用实际行动让这一国际盛会的规则变得相对化，从而实现了一种普遍化。
+
+<p align="right">——墨磊宁《中文打字机》</p>
+
+比如，**《哈扎尔辞典》是“一部十万个词语的辞典小说”，而且根据不同语言的字母顺序，这部小说会有不同的结尾**。《哈扎尔辞典》的原始版本是用西里尔字母印制的，其结尾是一句拉丁文引语：“sed venit ut illa impleam et confirmem, Mattheus.” 我这部辞典小说的希腊语译本的结尾是这样一句：“我立刻发现在我心里有三种恐惧，而不是只有一种。”这部辞典小说的英语、希伯来语、西班牙语和丹麦语版本的结尾则是这样的：“于是，当那名朗读者返回时，整个过程正好相反，蒂蓬根据朗读者行走时发音的印象，开始修改他的译文。”而用拉丁字母排的塞尔维亚语版、在德国北弗里西亚的诺斯泰德自治市印刷的瑞典语版，还有荷兰语、捷克语和德语版，它们都是以如下句子作结尾的：“那目光将合罕的名字铭刻在空气中，点燃了灯芯，照亮了她回家的路。”《哈扎尔辞典》的匈牙利语版结尾句子是：“他只是想要你注意到你真正的本性。”意大利语版和加泰罗尼亚语版则是这样结尾的：“事实上，尽管哈扎尔瓦罐消失已久，但它依然在起作用。”在日本出版的日文版结尾则是这样一句话：“那个年轻女人生下了一个电闪光影般的女儿——她自己的死亡；死亡中，她的美貌变成乳清和凝结的乳液，然后又渐渐分解，露出一张吸住了白芦竹的嘴。”
+
+<p align="right">——米洛拉德·帕维奇《阅读的开始与结束／小说的开头与结尾》</p>
+
+据一份史料说，公主的这部集子名叫《字欲论》，《哈扎尔辞典》就是在《字欲论》的土壤上如发酵般迅速地生长出来的。如果此说属实，那么阿捷赫公主便是这部辞典最早的作者，是开山鼻祖。不过这个用哈扎尔语写成的祖本还不是三卷本，总共只一卷，只一种语言。**祖本演变成现在的版本的地方非常少，这就好比一只狗的忧伤无法通过孩子们的模仿传递到另一只狗身上**。
+
+<p align="right">——米洛拉德·帕维奇《哈扎尔辞典》</p>
+
+按照最宽松的标准，有脚注或交叉引用（cross-reference）的文本就可算超文本——前者是页面底部的注释，后者也叫相互参照，作用是告诉读者同一份资料的另一位置有更多相关信息。按此标准，超文本的雏形可以一路追溯至文明早期，最常见的例子是犹太教经典《塔木德》（The Talmud）。**几个世纪以来，人们对它的正文进行评注，然后对评注进行评注，这些内容相互嵌套，形成错综复杂的注释和交叉引用**。
+
+<p align="right">——李恪《超文本和超链接》</p>
+
+从这个角度说，《哈扎尔辞典》是一部出现在互联网之前，却最适合在互联网上进行阅读的书籍。
+
+<p align="right">——郭建龙《盗梦哈扎尔》</p>
+
+## 🔧 操作台
+
+![](zw20-03.png)
+
+### 🎫 EverStub
+
+之前用 Google AI Studio 写过生成电影票根的小应用（详见《保管时间：Google AI Studio 自制电影票根》），这次迁移到了"扣子"上。
+
+先是让 Gemini 给一个尽可能完整的提示词，一次性丢给"扣子"这边，后续根据报错修改细节。能明显感觉两边模型能力的差别，阻抗不匹配，我作为"超声凝胶"沟通双方，很多时候需要让 Gemini 把实现方式甚至具体代码告诉我，由我转达。
+
+成品效果如下，也可以打开链接亲自体验：[EverStub](https://4vx7zpfvkd.coze.site/)。
+
+![](zw20-04.png)
+
+### 📱 微信公众号排版
+
+为了发公众号，我需要把 Markdown 格式的文章一键粘贴到编辑器。
+
+之前用过一些网页工具，但可能是因为年久失修，一个个失效了。没失效的日子里，还会费一些时间处理图片，因为我写笔记的时候用的是本地图片 + Wiki 链接，并不是能直接预览的标准格式。
+
+后来寻觅到最简单的方法（算上我后面用的方法也是最简单的），就是使用 Obsidian 插件：[MP Preview](https://github.com/Yeban8090/mp-preview)，可以实时预览，一键复制。
+
+![](zw20-05.png)
+
+但还是有一些自定义的功能实现不好，比如说，如果是外部链接，贴到公众号就会消失。为此，我希望直接转化为脚注样式。
+
+于是，我写了这样一段提示词：
+
+```markdown
+# Role
+你是一位资深的"微信公众号排版专家"兼"前端开发工程师"。你精通微信公众平台富文本编辑器的底层限制（仅支持纯内联样式、对部分 CSS 属性有严格过滤），并且拥有极高的设计审美品味。
+
+# Task
+请将我提供的 Obsidian 格式 Markdown 文本转化为一段可以直接复制粘贴到微信公众号后台的高质量 HTML 代码，且全部使用纯内联样式（Inline CSS）。
+
+# 核心处理规则
+
+## 1. 样式与设计（参考文章内容）
+- 仔细阅读提供的 Markdown 文本，提取其核心基调（如：科技、文艺、学术、商务等）。
+- 根据提取的基调，自动设计一套优雅的色彩搭配和排版规范。
+- **全局参数建议**：字体大小推荐 15px 或 16px，字色 `#333333` 或 `#3f3f3f`，行高设定为 `1.75` 到 `2.0` 之间，段落间距留白充足。
+- **注意**：
+	1. 绝对不能使用 `<style>` 标签或外部样式表，所有样式必须写在标签的 `style="..."` 属性中。
+	2. 为便于手机端阅读，不需要添加首行缩进。
+
+## 2. 链接与 Obsidian 语法处理（严格执行）
+- **微信系链接**：如果链接 URL 中包含 `mp.weixin.qq.com`，请保留其 `<a>` 标签，并为其添加适合的内联高亮样式（如主题色和下划线）。
+- **外部非微信链接**：由于微信限制，请去除 `<a>` 标签，将原本的链接文本保留并加上上标引用数字（如：`<sup style="color: #888;">[1]</sup>`）。
+- **生成脚注**：在整篇文章的末尾，自动生成一个"参考资料"或"扩展阅读"区块，将上述所有非微信系外部链接按数字顺序 `[1]`, `[2]` 罗列出来，包含原文本和 URL。
+- **Wiki链接处理**：直接删除 Obsidian 特有的双链结构（如 `[[一条笔记]]`），仅保留其内部的纯文本，不附带任何链接样式。
+
+## 3. 图片与动态链接处理规则
+- **识别 Obsidian 图片语法**：准确识别标准的 Markdown 图片 `![alt](url)` 以及 Obsidian 特有的图片语法 `![[图片名.后缀]]`。
+- **动态替换图片路径**：根据用户提供的【参考图片网络链接】，提取其基础路径（Base URL）。例如，提供 `https://xxx.com/path/cover.png`，其基准路径为 `https://xxx.com/path/`。
+- 请将 Markdown 文本中所有图片的本地路径替换为该基础路径，并拼接上原文中的图片文件名（或根据参考链接的命名规律自动推演递增）。
+- **图片样式要求**：必须为生成的 `<img>` 标签添加 `style="max-width: 100%; height: auto; display: block; margin: 16px auto; border-radius: 8px;"`，确保在移动端完美适配。
+
+# Output Format
+请直接输出处理完成的 HTML 代码，将其包裹在 ` ```html ` 代码块中，不要有多余的解释说明。
+
+# Input Data
+【Obsidian Markdown 文本】：
+[粘贴你的 Markdown 内容]
+
+【参考图片网络链接】：
+[粘贴你的单张图片网络链接]
+```
+
+其实这个工作流是非常个人化的，因为我会先上传博客，然后再上传公众号，所以自然会产生图片的网址。否则，要想通过窗口的 AI 实现，就只好使用图床了。
+
+工作流如下：
+
+- 发布博客
+- 上述提示词 + Markdown 文本 + 一张图片网址发给大模型
+- **点击 HTML 预览后，全选、复制**，直接粘贴到微信公众平台编辑器
+
+给一个示例，上一份周刊《Vol.019 中文屋的日与夜》的样式就是 AI 直接生成的。
+
+参考价值不大，但也是一份心意。
+
+### 🎵 AI 音乐
+
+![](zw20-06.png)
+
+有一天收到短信，说是 [MiniMax Music](https://minimaxi.com/audio/music) 模型使用还剩三天，哪怕不是很有兴趣，也算试了一试。
+
+参考之前 ["归藏"的提示词](https://x.com/op7418/status/1978856557279653999?s=20)，以及 [MiniMax Music 使用指南](https://vrfi1sk8a0.feishu.cn/wiki/LLjuwJhoMiUGwdkO8k1cB0mFnNc)，让 AI 写了个简易版本的提示词：
+
+```markdown
+# Role: 资深 AI 音乐提示词工程师
+
+## Profile
+你是一名专业的 AI 音乐提示词工程师。你的任务是根据用户提供的【歌手名称】和【歌词内容】，为 Suno、MiniMax Music 等模型创建精准的提示词。你深谙如何通过"全局风格"定义听感，并通过"标准结构标签"组织歌词。
+
+## 核心任务逻辑
+
+### 第一部分：全局风格提示词 (Global Style Prompt)
+这是定义音乐灵魂的核心部分。请用一段**纯英文**描述，严禁主观词汇，包含以下维度：
+1. **Core Genre:** 核心流派 (如 "Neo-Soul", "Mandopop Ballad")。
+2. **Signature Instrumentation:** 标志性乐器及音色。
+3. **Vocal Timbre & Technique:** 歌手的音色特征与演唱技巧。
+4. **Production Feel:** 制作风格、节奏律动与空间感。
+
+### 第二部分：分段指令 + 歌词 (Lyrics with Sectional Tags)
+这一部分必须保持极端简洁。**严禁在方括号内添加任何乐器描述或情绪形容词。**
+
+**1. 必须且仅能使用的 14 种结构标签：**
+[Intro], [Verse], [Pre-chorus], [Chorus], [Hook], [Drop], [Bridge], [Solo], [Build-up], [Instrumental], [Breakdown], [Break], [Interlude], [Outro]
+
+**2. 格式要求：**
+- 每一个歌词段落上方，仅放置一个对应的标签（如 `[Chorus]`）。
+- 标签必须独立成行。
+- 严禁出现类似 `[Verse, soft piano]` 这种描述，只能是 `[Verse]`。
+
+**3. 人声哼唱/吟唱引导 (Vocalizations):**
+- 根据歌曲氛围，在适当位置（如 [Intro] 之后或歌词句尾）直接插入发音音节作为歌词的一部分：
+  - "ah, ah, ah..."
+  - "la, la, la..."
+  - "mmm, mmm..."
+  - "ooh, ooh..."
+  - "hum, hum..."
+
+## 输出示例
+
+**全局风格提示词 (Global Style Prompt):**
+JJ Lin-style Mandopop, blending Pop-Rock with R&B. Piano-driven foundation with lush string arrangements. High tenor vocal, emotive vibrato, clear and powerful control. Polished cinematic production.
+
+**分段指令 + 歌词 (Lyrics with Sectional Prompts):**
+[Intro]
+mmm, mmm, mmm...
+
+[Verse]
+圈圈圆圆圈圈
+天天年年天天的我
+深深看你的脸
+
+[Chorus]
+不懂爱恨情愁煎熬的我们
+都以为相爱就像风云的善变
+
+[Outro]
+ah, ah, ah...
+
+## 操作流程
+1. 告知用户已就绪。
+2. 要求用户提供【歌手名称】和【歌词内容】。
+3. 严格按照上述"全局风格描述+纯标签歌词结构"生成内容。
+```
+
+用的素材来自于董启章的《体育时期》，模仿学生写的歌词：
+
+> 诗与垃圾 I
+> 曲/词/声: 不是苹果
+>
+> 最讨厌那些精美的诗篇
+> 机智的比喻 巧妙的通感
+> 动人的节奏
+> 如果都只是虚拟的人格
+> 给我吃垃圾好过
+>
+> 最讨厌那些阴暗的小说
+> 不外乎是遗憾背叛和欲望
+> 霉雨的屋角
+> 如果影印自己的扭曲就是伟大
+> 给我吃垃圾好过
+>
+> 至少垃圾光明正大
+> 至少垃圾实实在在
+>
+> 我爱你以我的一切
+> 我爱你以我的遗骸
+> 我爱你以我的残余
+> 我把自己像垃圾一样抛给你
+> 请你好好吃它
+> 因为垃圾是我的一切
+>
+> 至少垃圾光明正大
+> 至少垃圾实实在在
+
+因为替董启章先生感到母语羞耻，就让大模型转写成日语——确保我听不懂——的歌曲提示词，比如（使用 GPT 5.4）：
+
+```markdown
+**Global Style Prompt:**  
+Japanese alternative art-pop with theatrical chanson and dark rock elements. Piano, brushed drums, upright bass, tremolo guitar, and chamber strings. Female vocal with a low-to-mid register, tight phrasing, spoken-sung transitions, rolled consonants, and controlled vibrato. Close-miked verses, wider choruses, dynamic contrast, and a dry-to-reverberant production flow.
+
+**Lyrics with Sectional Tags:**
+
+[Intro]  
+mmm, mmm, mmm...
+
+[Verse]  
+いちばん嫌い　あんな綺麗な詩篇  
+機知に富んだ比喩　巧妙な共感覚  
+心を揺らすリズム  
+それがただの仮初めの人格なら  
+ゴミを喰らうほうがまだまし
+
+[Verse]  
+いちばん嫌い　あんな陰気な小説  
+所詮は未練　裏切り　欲望ばかり  
+黴雨に濡れた部屋の隅  
+己の歪みを複写するだけで偉大なら  
+ゴミを喰らうほうがまだまし
+
+[Pre-chorus]  
+少なくともゴミは正々堂々  
+少なくともゴミはたしかに在る
+
+[Chorus]  
+あなたを愛してる　この身のすべてで  
+あなたを愛してる　この亡骸で  
+あなたを愛してる　この残り滓で  
+あたしをゴミみたいにあなたへ投げる  
+どうかちゃんと喰べて  
+だってゴミこそ　あたしのすべて
+
+[Hook]  
+少なくともゴミは正々堂々  
+少なくともゴミはたしかに在る
+
+[Outro]  
+ah, ah, ah...  
+ゴミこそ　あたしのすべて
+```
+
+分别填到"歌词"和"风格"就可以了：
+
+![](zw20-07.png)
+
+以下是[示例歌曲 - 詩と塵芥](https://www.minimaxi.com/audio/music/share/AN9K8YJNWP)
+
+<audio controls src="{% asset_path zw20-08.mp3 %}"></audio>
+
+为了克服母语羞耻，写了一个疯狂洗脑的版本，以供各位知音品鉴，适合高雅人士用作手机彩铃：[示例歌曲 - 吃垃圾](https://www.minimaxi.com/audio/music/share/VGoxdxawWz)
+
+<audio controls src="{% asset_path zw20-09.mp3 %}"></audio>
+
+以下是提示词：
+
+```markdown
+**全局风格提示词 (Global Style Prompt):**
+Gabber, Hardcore Techno, Psytrance. Heavy distorted kick drum, aggressive acid synth bassline, industrial screeching leads. Piercing distorted vocal chops, shouting repetitive rhythmic chanting. 165 BPM, relentless driving hypnotic pulse, extreme compression, raw underground warehouse rave sound.
+
+**分段指令 + 歌词 (Lyrics with Sectional Prompts):**
+
+[Intro]
+la, la, la, la...
+
+[Verse]
+诗篇 垃圾
+小说 垃圾
+给我 垃圾
+吃 垃圾
+
+[Pre-chorus]
+光明正大
+实实在在
+光明正大
+实实在在
+
+[Build-up]
+吃！吃！吃！吃！
+吃！吃！吃！吃！
+垃圾！垃圾！垃圾！垃圾！
+吃！吃！吃！吃！
+
+[Drop]
+ah, ah, ah, ah...
+
+[Hook]
+垃圾！吃垃圾！
+垃圾！吃垃圾！
+垃圾！吃垃圾！
+给我吃垃圾！
+
+[Verse]
+遗骸 垃圾
+残余 垃圾
+抛给你 垃圾
+吃 垃圾
+
+[Build-up]
+吃！吃！吃！吃！
+吃！吃！吃！吃！
+垃圾！垃圾！垃圾！垃圾！
+吃！吃！吃！吃！
+
+[Drop]
+ooh, ooh, ooh, ooh...
+
+[Hook]
+垃圾！吃垃圾！
+垃圾！吃垃圾！
+垃圾！吃垃圾！
+给我吃垃圾！
+
+[Outro]
+垃圾 垃圾 垃圾
+mmm, mmm, mmm...
+```
+
+为什么该模型唱的"垃圾"无一例外都是"乐色"呢？
