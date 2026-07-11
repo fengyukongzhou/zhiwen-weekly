@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 668.343 853.19" width="668.343" height="853.19" style="--bg:#FFFFFF;--fg:#3B3B3B;--line:#3B3B3B;--accent:#005FB8;--muted:#3B3B3BCC;--surface:#F8F8F8;--border:#3B3B3B;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="OLD" data-label="❌ 现有流程（每个 Chunk）">
+  <rect x="281.409" y="40" width="346.93399999999997" height="773.19" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="281.409" y="40" width="346.93399999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="293.409" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">❌ 现有流程（每个 Chunk）</text>
+</g>
+<g class="subgraph" data-id="NEW" data-label="✅ 新流程（每个 Chunk）">
+  <rect x="40" y="40" width="221.40899999999996" height="555.2" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="40" width="221.40899999999996" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">✅ 新流程（每个 Chunk）</text>
+</g>
+<polyline class="edge" data-from="A1" data-to="A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="475.99449999999996,120.9 475.99449999999996,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A2" data-to="A3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="475.99449999999996,205.8 475.99449999999996,253.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A3" data-to="A4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="475.99449999999996,307.6 475.99449999999996,355.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A4" data-to="A5" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="475.99449999999996,392.5 475.99449999999996,440.50000000000006" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A5" data-to="A6" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="是" points="447.7128333333333,581.9083333333333 447.7128333333333,622.19 390.26099999999997,622.19 390.26099999999997,726.49" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A5" data-to="A7" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="否" points="504.27616666666665,581.9083333333334 504.27616666666665,622.19 561.728,622.19 561.728,726.49" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B1" data-to="B2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="154.96525,137.8 154.96525,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B2" data-to="B3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="146.44375,222.70000000000002 146.44375,270.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B3" data-to="B4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="146.44375,307.6 146.44375,355.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B4" data-to="B5" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="150.7045,409.40000000000003 150.7045,457.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B5" data-to="B6" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="150.7045,494.30000000000007 150.7045,542.3000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="A5" data-to="A6" data-label="是">
+  <rect x="375.26099999999997" y="653.19" width="29.53" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="390.02599999999995" y="668.34" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">是</text>
+</g>
+<g class="edge-label" data-from="A5" data-to="A7" data-label="否">
+  <rect x="546.728" y="653.19" width="29.53" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="561.4929999999999" y="668.34" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">否</text>
+</g>
+<g class="node" data-id="A1" data-label="全量术语表注入 Prompt" data-shape="rectangle">
+  <rect x="381.28999999999996" y="84" width="189.40899999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="475.99449999999996" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">全量术语表注入 Prompt</text>
+</g>
+<g class="node" data-id="A2" data-label="AI 翻译 + 提取新术语" data-shape="rectangle">
+  <rect x="390.182" y="168.9" width="171.62499999999997" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="475.9945" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">AI 翻译 + 提取新术语</text>
+</g>
+<g class="node" data-id="A3" data-label="Delta 前置过滤
+（检查后文出现）" data-shape="rectangle">
+  <rect x="395.73949999999996" y="253.8" width="160.51" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="475.99449999999996" y="280.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="475.99449999999996" dy="-3.9000000000000012">Delta 前置过滤</tspan><tspan x="475.99449999999996" dy="16.900000000000002">（检查后文出现）</tspan></text>
+</g>
+<g class="node" data-id="A4" data-label="写入 DB" data-shape="rectangle">
+  <rect x="430.19599999999997" y="355.6" width="91.59700000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="475.99449999999996" y="374.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">写入 DB</text>
+</g>
+<g class="node" data-id="A5" data-label="累计 ≥10 个新词?" data-shape="diamond">
+  <polygon points="475.9945,440.5 560.8395,525.345 475.9945,610.19 391.1495,525.345" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="475.9945" y="525.345" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">累计 ≥10 个新词?</text>
+</g>
+<g class="node" data-id="A6" data-label="再次前置过滤
++ AI 增量审查
+（花费额外 API 调用）" data-shape="rectangle">
+  <rect x="297.409" y="726.49" width="185.70399999999998" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="390.26099999999997" y="761.84" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="390.26099999999997" dy="-12.350000000000001">再次前置过滤</tspan><tspan x="390.26099999999997" dy="16.900000000000002">+ AI 增量审查</tspan><tspan x="390.26099999999997" dy="16.900000000000002">（花费额外 API 调用）</tspan></text>
+</g>
+<g class="node" data-id="A7" data-label="继续翻译" data-shape="rectangle">
+  <rect x="511.11299999999994" y="726.49" width="101.22999999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="561.728" y="744.94" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">继续翻译</text>
+</g>
+<g class="node" data-id="B1" data-label="按需过滤：只取
+在本 Chunk 出现的术语" data-shape="rectangle">
+  <rect x="60.63124999999999" y="84" width="188.668" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="154.96525" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="154.96525" dy="-3.9000000000000012">按需过滤：只取</tspan><tspan x="154.96525" dy="16.900000000000002">在本 Chunk 出现的术语</tspan></text>
+</g>
+<g class="node" data-id="B2" data-label="精简术语表注入 Prompt" data-shape="rectangle">
+  <rect x="56" y="185.8" width="189.40899999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="150.7045" y="204.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">精简术语表注入 Prompt</text>
+</g>
+<g class="node" data-id="B3" data-label="AI 翻译 + 提取新术语" data-shape="rectangle">
+  <rect x="60.63124999999999" y="270.70000000000005" width="171.62499999999997" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="146.44374999999997" y="289.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">AI 翻译 + 提取新术语</text>
+</g>
+<g class="node" data-id="B4" data-label="Delta 前置过滤
+（检查后文出现）" data-shape="rectangle">
+  <rect x="70.44949999999999" y="355.6" width="160.51" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="150.7045" y="382.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="150.7045" dy="-3.9000000000000012">Delta 前置过滤</tspan><tspan x="150.7045" dy="16.900000000000002">（检查后文出现）</tspan></text>
+</g>
+<g class="node" data-id="B5" data-label="写入 DB" data-shape="rectangle">
+  <rect x="104.90599999999998" y="457.40000000000003" width="91.59700000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="150.7045" y="475.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">写入 DB</text>
+</g>
+<g class="node" data-id="B6" data-label="继续翻译" data-shape="rectangle">
+  <rect x="100.08949999999999" y="542.3000000000001" width="101.22999999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="150.7045" y="560.7500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">继续翻译</text>
+</g>
+</svg>

@@ -1,0 +1,282 @@
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --meta-color: #888888;
+    --border-color: #e5e5e5;
+    --font-sans: 'Inter', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    --font-serif: 'Source Han Serif SC', 'Noto Serif CJK SC', 'SimSun', STSong, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Index Page */
+.index-container {
+    padding: 8vw 5vw;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: flex-end;
+    gap: 2.5rem;
+    margin-bottom: 6rem;
+    border-bottom: 4px solid var(--text-color);
+    padding-bottom: 1.5rem;
+}
+
+.site-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.site-title {
+    font-size: 5.5rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 0.85;
+    margin: 0;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2.5rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    color: var(--text-color);
+}
+
+.post-item:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.post-meta-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.post-vol {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--meta-color);
+    transition: color 0.2s;
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+    transition: color 0.2s;
+}
+
+.post-item:hover .post-vol,
+.post-item:hover .post-date {
+    color: #ccc;
+}
+
+.post-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0;
+    font-family: var(--font-sans);
+    line-height: 1.3;
+}
+
+/* Article Page */
+.article-header {
+    padding: 8vw 5vw 4vw;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 4vw;
+}
+
+.article-vol {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--meta-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.article-title {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0 auto 2rem;
+    max-width: 900px;
+    letter-spacing: -0.01em;
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: var(--meta-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.article-content {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 5vw 8vw;
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: 2;
+    text-align: justify;
+    text-wrap: pretty;
+}
+
+.article-content h2, .article-content h3 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    color: var(--text-color);
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.article-content h2 { font-size: 2rem; }
+.article-content h3 { font-size: 1.5rem; }
+
+.article-content p {
+    margin-bottom: 1.8rem;
+}
+
+.article-content a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    /* 拟真荧光笔高亮效果：边缘稍淡、中间浓，并且只覆盖文字下半部分 */
+    background-image: linear-gradient(to right, rgba(255, 213, 79, 0.3) 0%, rgba(255, 213, 79, 0.8) 10%, rgba(255, 213, 79, 0.8) 90%, rgba(255, 213, 79, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-position: 0 88%;
+    background-size: 100% 0.35em;
+    transition: background-size 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), background-position 0.25s;
+    border-radius: 2px;
+}
+
+.article-content a:hover {
+    background-size: 100% 95%;
+    background-position: 0 100%;
+}
+
+.article-content img {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 4rem 0;
+}
+
+.article-content blockquote {
+    margin: 3rem 0;
+    padding: 1.5rem 0 1.5rem 2rem;
+    border-left: 4px solid var(--text-color);
+    font-style: normal;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.article-content pre {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    overflow-x: auto;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 3rem 0;
+    border: 1px solid var(--border-color);
+    color: #24292e;
+}
+
+.article-content code {
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+    background-color: #f8f9fa;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #24292e;
+}
+
+.article-content pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: inherit;
+}
+
+.article-content hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 4rem 0;
+}
+
+.nav-back {
+    display: inline-block;
+    margin: 2vw 5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-back:hover {
+    border-color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .site-title { font-size: 3rem; }
+    .post-item {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 1.5rem 0;
+    }
+    .post-vol { font-size: 1.2rem; }
+    .post-title { font-size: 1.8rem; }
+    .post-date { font-size: 0.9rem; }
+    .article-title { font-size: 2.5rem; }
+    .nav-back { position: relative; margin: 5vw; }
+}
