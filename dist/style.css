@@ -306,3 +306,118 @@ a {
     .lang-toggle { font-size: 1.2rem; padding: 0.8rem 1.2rem; }
     .nav-back { font-size: 1.2rem; padding: 0.8rem 1.2rem; position: relative; border: 4px solid var(--text-color); margin: 5vw 0 0 5vw;}
 }
+
+/* Custom Thought Divider for 闪念集 */
+.article-content hr.thought-hr {
+    border: none !important;
+    height: 0 !important;
+    background: transparent !important;
+    max-width: 800px; /* Align visual width with paragraph content */
+    text-align: center;
+    margin: 3.5rem 0;
+    overflow: visible;
+}
+
+.article-content hr.thought-hr::after {
+    content: "///";
+    font-family: var(--font-head);
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--text-color);
+    opacity: 0.4;
+    letter-spacing: 0.6rem;
+    display: inline-block;
+    transform: skewX(-12deg);
+    padding-left: 0.6rem; /* offset letter-spacing */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.article-content hr.thought-hr:hover::after {
+    opacity: 1;
+    color: var(--text-color);
+    transform: skewX(-20deg) scale(1.15);
+}
+
+/* Elegant Footnotes Styling */
+.footnote-ref {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+    margin-left: 0.15em;
+    margin-right: 0.15em;
+}
+
+.footnote-ref a {
+    background: transparent !important;
+    border: none !important;
+    color: var(--text-color) !important;
+    opacity: 0.6;
+    padding: 0 !important;
+    font-weight: bold !important;
+    transition: opacity 0.2s;
+}
+
+.footnote-ref a:hover {
+    background: transparent !important;
+    color: var(--text-color) !important;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.article-content hr.footnotes-sep {
+    border: 0;
+    border-top: 2px dashed var(--text-color);
+    height: 0;
+    margin: 4rem 0 2rem 0;
+    opacity: 0.3;
+}
+
+.article-content .footnotes {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-top: 2rem;
+}
+
+.article-content .footnotes-list {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.article-content .footnote-item {
+    margin-bottom: 0.8rem;
+    word-break: break-all;
+}
+
+/* Footnote inner links override brutalist styling */
+.article-content .footnote-item a {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid var(--text-color) !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+    color: var(--text-color) !important;
+}
+
+.article-content .footnote-item a:hover {
+    background: var(--text-color) !important;
+    color: var(--bg-color) !important;
+}
+
+.article-content .footnote-backref {
+    border: none !important;
+    text-decoration: none !important;
+    margin-left: 0.4rem;
+    font-family: var(--font-sans);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    display: inline-block;
+}
+
+.article-content .footnote-backref:hover {
+    background: transparent !important;
+    color: var(--text-color) !important;
+    opacity: 1;
+}

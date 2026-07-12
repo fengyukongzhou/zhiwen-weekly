@@ -340,6 +340,121 @@ a {
     .lang-toggle { font-size: 1.2rem; padding: 0.8rem 1.2rem; }
     .nav-back { font-size: 1.2rem; padding: 0.8rem 1.2rem; position: relative; border: 4px solid var(--text-color); margin: 5vw 0 0 5vw;}
 }
+
+/* Custom Thought Divider for 闪念集 */
+.article-content hr.thought-hr {
+    border: none !important;
+    height: 0 !important;
+    background: transparent !important;
+    max-width: 800px; /* Align visual width with paragraph content */
+    text-align: center;
+    margin: 3.5rem 0;
+    overflow: visible;
+}
+
+.article-content hr.thought-hr::after {
+    content: "///";
+    font-family: var(--font-head);
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--text-color);
+    opacity: 0.4;
+    letter-spacing: 0.6rem;
+    display: inline-block;
+    transform: skewX(-12deg);
+    padding-left: 0.6rem; /* offset letter-spacing */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.article-content hr.thought-hr:hover::after {
+    opacity: 1;
+    color: var(--text-color);
+    transform: skewX(-20deg) scale(1.15);
+}
+
+/* Elegant Footnotes Styling */
+.footnote-ref {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+    margin-left: 0.15em;
+    margin-right: 0.15em;
+}
+
+.footnote-ref a {
+    background: transparent !important;
+    border: none !important;
+    color: var(--text-color) !important;
+    opacity: 0.6;
+    padding: 0 !important;
+    font-weight: bold !important;
+    transition: opacity 0.2s;
+}
+
+.footnote-ref a:hover {
+    background: transparent !important;
+    color: var(--text-color) !important;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.article-content hr.footnotes-sep {
+    border: 0;
+    border-top: 2px dashed var(--text-color);
+    height: 0;
+    margin: 4rem 0 2rem 0;
+    opacity: 0.3;
+}
+
+.article-content .footnotes {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-top: 2rem;
+}
+
+.article-content .footnotes-list {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.article-content .footnote-item {
+    margin-bottom: 0.8rem;
+    word-break: break-all;
+}
+
+/* Footnote inner links override brutalist styling */
+.article-content .footnote-item a {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid var(--text-color) !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+    color: var(--text-color) !important;
+}
+
+.article-content .footnote-item a:hover {
+    background: var(--text-color) !important;
+    color: var(--bg-color) !important;
+}
+
+.article-content .footnote-backref {
+    border: none !important;
+    text-decoration: none !important;
+    margin-left: 0.4rem;
+    font-family: var(--font-sans);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    display: inline-block;
+}
+
+.article-content .footnote-backref:hover {
+    background: transparent !important;
+    color: var(--text-color) !important;
+    opacity: 1;
+}
 `;
 
 // Build process
@@ -371,7 +486,7 @@ async function build() {
         return { meta, body };
     }
 
-    function renderBodyHtml(body, slug) {
+    function renderBodyHtml(body, slug, lang = 'zh') {
         if (!body) return '';
         // Handle markdown images
         body = body.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
@@ -389,7 +504,58 @@ async function build() {
         });
         // Remove <!--more-->
         body = body.replace(/<!--more-->/g, '');
-        return marked.parse(body);
+
+        // --- Footnote Handling Start ---
+        const footnoteDefs = new Map();
+        // Extract and remove footnote definitions
+        let cleanedBody = body.replace(/^\[\^([^\]]+)\]:\s*([\s\S]*?)(?=(?:^\[\^[^\]]+\]:|^#|^\s*\n\s*\n)|$)/gm, (match, id, content) => {
+            footnoteDefs.set(id.trim(), content.trim());
+            return '';
+        });
+
+        // Replace footnote references in text
+        const footnoteMap = new Map();
+        const refIds = [];
+        let footnoteIndex = 1;
+        cleanedBody = cleanedBody.replace(/\[\^([^\]]+)\]/g, (match, id) => {
+            const trimmedId = id.trim();
+            if (footnoteDefs.has(trimmedId)) {
+                let index = footnoteMap.get(trimmedId);
+                if (!index) {
+                    index = footnoteIndex++;
+                    footnoteMap.set(trimmedId, index);
+                    refIds.push(trimmedId);
+                }
+                return `<sup class="footnote-ref" id="fnref-${slug}-${lang}-${index}"><a href="#fn-${slug}-${lang}-${index}">${index}</a></sup>`;
+            }
+            return match;
+        });
+        // --- Footnote Handling End ---
+
+        let html = marked.parse(cleanedBody);
+
+        // --- Custom Thought Divider and Footnotes Output Start ---
+        // 1. Custom Thought Divider for 闪念集 (Match both Chinese and English titles)
+        html = html.replace(/(<h2[^>]*>.*?(?:闪念集|Flash Collection|Thoughts).*?<\/h2>)([^]*?)(?=<h2|$)/gi, (match, h2, content) => {
+            const updatedContent = content.replace(/<hr\s*\/?>/gi, '<hr class="thought-hr">');
+            return h2 + updatedContent;
+        });
+
+        // 2. Append footnotes if exist
+        if (refIds.length > 0) {
+            let footnotesHtml = `<hr class="footnotes-sep">\n<section class="footnotes">\n<ol class="footnotes-list">\n`;
+            for (const id of refIds) {
+                const index = footnoteMap.get(id);
+                const content = footnoteDefs.get(id);
+                const contentHtml = marked.parseInline(content);
+                footnotesHtml += `<li id="fn-${slug}-${lang}-${index}" class="footnote-item">${contentHtml} <a href="#fnref-${slug}-${lang}-${index}" class="footnote-backref">↩</a></li>\n`;
+            }
+            footnotesHtml += `</ol>\n</section>\n`;
+            html += footnotesHtml;
+        }
+        // --- Custom Thought Divider and Footnotes Output End ---
+
+        return html;
     }
 
     // Get unique base slugs (e.g. zhiwen-weekly-vol001)
@@ -433,8 +599,8 @@ async function build() {
 
         const dateStr = meta.date ? new Date(meta.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
 
-        const htmlZh = zhData ? renderBodyHtml(zhData.body, slug) : '<p>中文版尚未就绪，请稍后重试。</p>';
-        const htmlEn = enData ? renderBodyHtml(enData.body, slug) : '<p>English version is currently being translated. Please check back later.</p>';
+        const htmlZh = zhData ? renderBodyHtml(zhData.body, slug, 'zh') : '<p>中文版尚未就绪，请稍后重试。</p>';
+        const htmlEn = enData ? renderBodyHtml(enData.body, slug, 'en') : '<p>English version is currently being translated. Please check back later.</p>';
 
         posts.push({
             vol: volNum,
